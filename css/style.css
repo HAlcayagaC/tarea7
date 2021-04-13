@@ -1,0 +1,133 @@
+:root {
+    --fuente: 'Montserrat', sans-serif;
+    --colorPrimario: #51c4d3;
+    --colorSecundario: #126e82;
+    --colorSuave: #d8e3e7;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+body {
+    font-family: var(--fuente);
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--colorPrimario);
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    padding: 1rem 0 1rem 0;
+}
+
+.nav__items {
+    color: white;
+}
+
+
+/*video*/
+
+.video_src {
+    /* height: 100%; */
+    width: 100%;
+}
+
+
+/*Presentación*/
+
+.presentacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.presentacion__logo {
+    text-align: center;
+}
+
+.logo__img {
+    width: 60rem;
+    height: 100%;
+}
+
+.parrafo {
+    margin-top: 1rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 1rem;
+    background-color: var(--colorSecundario);
+    color: white;
+    margin-top: 1rem;
+}
+
+
+/*Contacto*/
+
+.contacto {
+    background-color: var(--colorSuave);
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto__title {
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+}
+
+.contacto__inputs {
+    padding: 2rem 0 2rem 0;
+}
+
+.inputs {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid gray;
+    width: 100%;
+}
+
+.submit__contenedor {
+    text-align: center;
+}
+
+.btn-enviar {
+    padding: 1rem 8rem;
+}
+
+
+/*Footer*/
+
+.footer {
+    background-color: var(--colorPrimario);
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+    color: white;
+}
